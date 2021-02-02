@@ -1,5 +1,5 @@
 #include "tst_device.h"
-#include "tst_device_list.h"
+#include "tst_message.h"
 #include "tst_device_intercom.h"
 
 #include <gtest/gtest.h>

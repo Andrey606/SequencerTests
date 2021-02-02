@@ -26,23 +26,28 @@ HEADERS += \
         ../sequencer/IR_module.h \
         ../sequencer/Log/LoggingCategories.h \
         ../sequencer/ZigbeeConstant.h \
+        ../sequencer/buffer.h \
         ../sequencer/clientconnection.h \
         ../sequencer/colordebug.h \
+        ../sequencer/db.h \
+        ../sequencer/device_list.h \
         ../sequencer/device_manager/deviceAutoAdding.h \
         ../sequencer/device_manager/device_types.h \
         ../sequencer/device_manager/devices.h \
         ../sequencer/device_manager/re_adding_omo_devices.h \
         ../sequencer/jsonobject.h \
+        ../sequencer/message.h \
         ../sequencer/sequencer.h \
         ../sequencer/shellAdmin.h \
         ../sequencer/shellhost.h \
         ../sequencer/shellserver.h \
         ../sequencer/shellvoice.h \
+        ../sequencer/signalManager.h \
         ../sequencer/tuyaParser.h \
         ../sequencer/webserver.h \
         tst_device.h \
         tst_device_intercom.h \
-        tst_device_list.h
+        tst_message.h
 
 SOURCES += \
         ../sequencer/IR/CarrierHeatpumpIR.cpp \
@@ -55,17 +60,22 @@ SOURCES += \
         ../sequencer/IR/MitsubishiHeavyHeatpumpIR.cpp \
         ../sequencer/IR/ToshibaDaiseikaiHeatpumpIR.cpp \
         ../sequencer/Log/LoggingCategories.cpp \
+        ../sequencer/buffer.cpp \
         ../sequencer/clientconnection.cpp \
         ../sequencer/colordebug.cpp \
+        ../sequencer/db.cpp \
+        ../sequencer/device_list.cpp \
         ../sequencer/device_manager/deviceAutoAdding.cpp \
         ../sequencer/device_manager/devices.cpp \
         ../sequencer/device_manager/re_adding_omo_devices.cpp \
         ../sequencer/jsonobject.cpp \
+        ../sequencer/message.cpp \
         ../sequencer/sequencer.cpp \
         ../sequencer/shellAdmin.cpp \
         ../sequencer/shellhost.cpp \
         ../sequencer/shellserver.cpp \
         ../sequencer/shellvoice.cpp \
+        ../sequencer/signalManager.cpp \
         ../sequencer/tuyaParser.cpp \
         ../sequencer/webserver.cpp \
         main.cpp
