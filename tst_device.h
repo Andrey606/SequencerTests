@@ -44,6 +44,17 @@ TEST(Device, changeDeviceTypeByName)
     ASSERT_THAT("IMS", obj->get_device_type());
 }
 
+TEST(Device, DETECTED)
+{
+    Device *obj = new Device();
+    ASSERT_THAT(Device::eConfirmedStatus::DETECTED, obj->get_device_status());
+    ASSERT_THAT(Device::eConfirmedStatus::DETECTED, obj->get_device_status());
+    obj->set_device_endpoint(1);
+    ASSERT_THAT(Device::eConfirmedStatus::DETECTED, obj->get_device_status());
+    obj->set_device_short(0x5555);
+    ASSERT_THAT(Device::eConfirmedStatus::DETECTED, obj->get_device_status());
+}
+
 TEST(Device, changeDeviceConfirmStatus)
 {
     Device *obj = new Device();

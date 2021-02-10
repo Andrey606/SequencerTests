@@ -37,6 +37,7 @@ HEADERS += \
         ../sequencer/device_manager/re_adding_omo_devices.h \
         ../sequencer/jsonobject.h \
         ../sequencer/message.h \
+        ../sequencer/deviceFactory.h \
         ../sequencer/sequencer.h \
         ../sequencer/shellAdmin.h \
         ../sequencer/shellhost.h \
@@ -64,6 +65,7 @@ SOURCES += \
         ../sequencer/clientconnection.cpp \
         ../sequencer/colordebug.cpp \
         ../sequencer/db.cpp \
+        ../sequencer/deviceFactory.cpp \
         ../sequencer/device_list.cpp \
         ../sequencer/device_manager/deviceAutoAdding.cpp \
         ../sequencer/device_manager/devices.cpp \
